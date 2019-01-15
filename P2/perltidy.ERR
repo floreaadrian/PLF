@@ -1,0 +1,44 @@
+Perltidy version is 20180220
+
+1: %add(L-initial list,L-Second List,Ca-Carry, R-resulted list)
+   ----^                                                       
+found ( where operator expected (previous token underlined)
+
+There is no previous '?' to match a ':' on line 2
+2: %flow model: (i,i,i,i), (i,i,i,o)
+              ^
+
+3: add([],[],_,[]).
+   ^               
+found bareword where operator expected
+
+Missing ';' above?
+
+There is no previous '?' to match a ':' on line 5
+5: add([H1|T1],[H2|T2],Ca,R) :-
+                             ^
+
+8: Res is (H1+H2+Ca) mod 10,
+                   - ^      
+found bareword where operator expected (previous token underlined)
+
+There is no previous '?' to match a ':' on line 11
+11: add([H1|T1],[],Ca,R) :-
+                         ^
+
+There is no previous '?' to match a ':' on line 13
+13: add([H1|T1],[H2|T2],Ca,R) :-
+                              ^
+
+There is no previous '?' to match a ':' on line 18
+18: add([],[],Ca,R):-
+                   ^
+
+There is no previous '?' to match a ':' on line 19
+19: Ca =:= 1,
+        ^
+
+There is no previous '?' to match a ':' on line 24
+24: reverse([H|T],Z,Acc) :- reverse(T,Z,[H|Acc]).
+                         ^
+29:	To save a full .LOG file rerun with -g

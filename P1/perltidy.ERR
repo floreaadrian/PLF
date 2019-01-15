@@ -1,0 +1,44 @@
+Perltidy version is 20180220
+
+1: %replace(L-initial list,Fnd-integer,Rpl-integer, R-resulted list)
+   --------^                                                        
+found ( where operator expected (previous token underlined)
+
+There is no previous '?' to match a ':' on line 2
+2: %flow model: (i,i,i,i), (i,i,i,o)
+              ^
+
+4: %					  | 0, L=0
+   --------- ^     
+found Number where operator expected (previous token underlined)
+
+5: %replace(L,Fnd,Rpl) = | Rpl U replace(tail(L),Fnd,Rpl), head(L)  ...
+                       - ^                                             
+found | where term expected (previous token underlined)
+
+6: %				      | head(L) U replace(tail(L),Fnd,Rpl), head(L) != Fnd
+   ------------ ^                                                 
+found bareword where operator expected (previous token underlined)
+
+6: %				      | head(L) U replace(tail(L),Fnd,Rpl), head(L) != Fnd
+                      - ^                                         
+found bareword where operator expected (previous token underlined)
+
+There is no previous '?' to match a ':' on line 9
+9: replace([H|T],Fnd,Rpl,R):- H =:= Fnd, 
+                           ^
+
+There is no previous '?' to match a ':' on line 9
+9: replace([H|T],Fnd,Rpl,R):- H =:= Fnd, 
+                                 ^
+
+There is no previous '?' to match a ':' on line 12
+12: replace([H|T],Fnd,Rpl,R):- H =\= Fnd, 
+                            ^
+14:	final indentation level: 2
+
+Final nesting depth of '{'s is 2
+The most recent un-matched '{' is on line 7
+7: %					  {
+           ^
+14:	To save a full .LOG file rerun with -g

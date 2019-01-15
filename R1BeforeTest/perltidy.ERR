@@ -1,0 +1,50 @@
+Perltidy version is 20180220
+
+1: %member(L - list, Elem - number)
+   -------^                        
+found ( where operator expected (previous token underlined)
+
+3: member([H|_],Elem):-
+   ^                   
+found bareword where operator expected
+
+Missing ';' above?
+
+There is no previous '?' to match a ':' on line 3
+3: member([H|_],Elem):-
+                     ^
+
+There is no previous '?' to match a ':' on line 4
+4: H =:= Elem.
+      ^
+
+There is no previous '?' to match a ':' on line 5
+5: member([H|T],Elem):-
+                     ^
+
+9: %difference(L1 - list, L2 - list, R - list)
+   -----------^                               
+found ( where operator expected (previous token underlined)
+
+11: difference([],[],[]).
+    ^                    
+found bareword where operator expected
+
+Missing ';' above?
+
+There is no previous '?' to match a ':' on line 12
+12: difference([H|T],[],R):-
+                          ^
+
+There is no previous '?' to match a ':' on line 15
+15: difference([H1|T1],[H2|T2],R):-
+                                 ^
+
+There is no previous '?' to match a ':' on line 19
+19: Val =:= 0,
+         ^
+
+There is no previous '?' to match a ':' on line 22
+22: difference([H1|T1],[H2|T2],R):-
+                                 ^
+30:	To save a full .LOG file rerun with -g

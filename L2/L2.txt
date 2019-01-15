@@ -1,0 +1,9 @@
+(DEFUN findNode(arb nivel x)
+       (COND
+        ((and (atom arb) (= arb x) nivel))
+        ((atom arb) 0)
+        (T (apply '+( mapcar #'(lambda(a)(findNode a (+ 1 nivel))) arb)))
+        )
+       )
+(DEFUN noduri (arb x) (findNode arb 0 x))
+(print (noduri '(1 (2 3) ( 4  (6 7) ) ) 6) )

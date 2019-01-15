@@ -1,0 +1,5 @@
+%mmul(k-integer,L-initial list, R-resulted list)
+%flow model: (i,i,i), (i,i,o)
+mmul(_,[],[]).
+mmul(K,[H|T],[HR|TR]):- HR is K*H, mmul(K,T,TR).
+%mmul(2,[2,3],R)
